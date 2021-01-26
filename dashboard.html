@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Tab</title>
+  <script src="jquery-3.js"></script>
+  <script src="/oauth.js"></script>
+  <script src="perfectscrollbar.js"></script>
+  <script src="classroom.js"></script>
+  <script src="menu.js"></script>
+  <link rel="icon" href="/logo-s.png">
+
+  <script src="scriptv3.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="feedback.css">
+  <link rel="stylesheet" href="perfect-scrollbar.css" />
+  <link rel="stylesheet" href="icons/css/fontello.css" />
+  <link rel="stylesheet" href="maps.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <div class="credits">
+      <span class="location">
+      </span>
+      <a class="author" target="_blank"></a>
+      <span class="seperator"></span>
+      <a class="origin" target="_blank"></a>
+    </div>
+    <div class="assignments">
+      <div class="clock">
+        83:23
+      </div>
+      <div class="scrollbox">
+      </div>
+      <!--<div class="assignment">
+        <span class="title">Test
+        </span>
+        <span class="due">Friday
+        </span>
+        <span class="class">Worldruling I
+        </span>
+      </div>-->
+    </div>
+    <!--<button class="logout">Logout</button>-->
+    <i class="icon-cog settings"></i>
+    <div class="menu" style="margin-left:-500px;">
+      <div class="menumenu">
+        <i class="icon-cancel close-settings"></i>
+        <span class="settings-title">Settings</span>
+      </div>
+      <div class="background"></div>
+      <div class="scrollcont">
+        <div class="profile">
+          <table>
+            <tr>
+              <td class="img">
+                <img src=''></img>
+              </td>
+              <td class="info">
+                <span class="username">-</span>
+                <span class="email">-</span>
+              </td>
+              <td class="logout">
+                <span class="logout">Logout <i class="icon-logout"></i></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- LIVELOAD -->
+        <span class="liveLoad-title liveLoad-realtitle">Live Classroom Loading</span>
+        <table class="liveLoad">
+          <tr>
+            <td class="radios">
+              <input type="radio" class="off" name="liveLoad" id="liveLoad1" value="off"><label for="liveLoad1"></label>
+              <div class="radio-vr"></div>
+              <input type="radio" class="on" name="liveLoad" id="liveLoad2" value="on"><label for="liveLoad2"></label>
+            </td>
+            <td class="text">
+              <span class="liveLoad lloff">
+                <b>Off</b>
+                The coursework will be loaded every 10 minutes automatically in the background, which decreases its loading time when a new tab is opened, but creates an average 5 minute delay.
+              </span>
+              <span class="liveLoad llon">
+                <b>On</b>
+                The coursework will be loaded "live" on every new tab, which can take a few seconds. This is only recommended for people who regularily check the App/Play Store for updates. <i class="icon-smile"></i>
+              </span>
+            </td>
+          </tr>
+        </table>
+        <!-- TIMEFORMAT -->
+        <span class="liveLoad-title timeformat-title">Time Format</span>
+        <table class="liveLoad">
+          <tr>
+            <td class="radios">
+              <input type="radio" class="h12" name="timeformat" id="timeformat1" value="12"><label for="timeformat1"></label>
+              <div class="radio-vr timeformat"></div>
+              <input type="radio" class="h24" name="timeformat" id="timeformat2" value="24"><label for="timeformat2"></label>
+            </td>
+            <td class="text">
+              <span class="liveLoad tf12">
+                <b>12-hours</b>
+              </span>
+              <span class="liveLoad tf24">
+                <b>24-hours</b>
+              </span>
+            </td>
+          </tr>
+        </table>
+        <!-- DATEFORMAT -->
+        <span class="liveLoad-title dateformat-title">Date Format</span>
+        <table class="liveLoad">
+          <tr>
+            <td class="radios">
+              <input type="radio" class="us" name="dateformat" id="dateformat1" value="us"><label for="dateformat1"></label>
+              <div class="radio-vr timeformat"></div>
+              <input type="radio" class="en" name="dateformat" id="dateformat2" value="en"><label for="dateformat2"></label>
+            </td>
+            <td class="text">
+              <span class="liveLoad dfus">
+                <b>Jan. 1st 2000</b>
+              </span>
+              <span class="liveLoad dfde">
+                <b>1 Jan. 2000</b>
+              </span>
+            </td>
+          </tr>
+        </table>
+
+        <!-- FEEDBACK -->
+        <span class="sendfeedback">Send Feedback <i class="icon-paper-plane"></i></span>
+        <span class="love">Made with <i class="icon-heart"></i> and out of boredom in <span title="Actually a suburb, but Chicago sounds better">Chicago</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="loading">
+    <div class="loader">Loading...</div>
+  </div>
+  <!-- FEEDBACK -->
+  <div class="feedback">
+    <div class="fmain">
+      <i class="icon-cancel"></i>
+      <input placeholder="Subject" type="text" class="subject">
+      <textarea class="message" placeholder="Message" maxlength="5000"></textarea>
+      <span class="privacy-info"><i class="icon-info-circled"></i>The email address and name associated with your account will be send with the feedback with the only purpose being to make us able to reply to you.</span>
+      <span class="sendfeedback">Send Feedback <i class="icon-paper-plane"></i></span>
+    </div>
+  </div>
+  <!--<div id="map"></div>
+  <script src="maps.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgZ2BP26JS4LYe8v7LmfkdFzl7_baQc7I&callback=initMap">
+  </script>-->
+</body>
+</html>

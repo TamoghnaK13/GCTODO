@@ -1,0 +1,8 @@
+div#map {
+  position: absolute;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
